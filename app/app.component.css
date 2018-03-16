@@ -1,0 +1,22 @@
+#box{
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+#inp{
+    width: 200px
+}
+ul li{
+    list-style: none;
+    line-height: 30px;
+    text-align: left;
+}
+b{
+    line-height: 20px;
+}
+#h1{
+    float: left;
+}
+#b1{
+    float: right;
+}
