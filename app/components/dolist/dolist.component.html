@@ -1,0 +1,11 @@
+<div id="box2">
+  <div class="box1">
+    <b id="b1">已经完成</b><b id="b2">{{this.doarr.length}}</b><br>
+    <ul>
+      <li *ngFor="let val of dodata; let i = index">
+        <input type="checkbox" checked (change)="change2(i)">{{val}}------<button (click)="del2(i)">也不要了</button>
+      </li>
+    </ul>
+  </div>
+  
+</div>

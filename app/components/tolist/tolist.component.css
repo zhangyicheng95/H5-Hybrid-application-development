@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+}
+#box{
+    width: 1200px;
+    margin: 0 auto;
+    background: #cdcdcd;
+}
+.box3{
+    width: 450px;
+    margin: 0 auto;
+}
+#b1{
+    float: left;
+}
+#b2{
+    float: right;
+}
+ul li{
+    list-style: none;
+}
+ul{
+    text-align: left;
+}
+#top{
+    background: #000;
+    text-align: center;
+    color: beige;
+    height: 40px;
+    line-height: 40px;
+}

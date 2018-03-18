@@ -1,0 +1,22 @@
+#box2{
+    width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+    background: #cdcdcd;
+}
+.box1{
+    width: 450px;
+    margin: 0 auto;
+}
+#b1{
+    float: left;
+}
+#b2{
+    float: right;
+}
+ul li{
+    list-style: none;
+}
+ul{
+    text-align: left;
+}
