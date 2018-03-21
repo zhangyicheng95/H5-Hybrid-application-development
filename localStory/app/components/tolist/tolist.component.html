@@ -1,0 +1,16 @@
+<div id="box">
+    <div id="top">
+            <b class="b1">ToDoList</b>
+            <input type="text" [(ngModel)]="data" id="inp" (keyup)="add($event)">
+    </div>
+    
+    <div class="box3">
+        <b id="b1">正在进行</b><b id="b2">{{toarr.length}}</b><br>
+        <ul>
+            <li *ngFor="let item of toarr; let i = index">
+                <input type="checkbox" (change)="change(i)">{{item}}——————————————<button (click)="del(i)">不要了</button>
+            </li>
+        </ul>
+    </div><br>
+    
+</div>

@@ -1,0 +1,50 @@
+
+<div id="box">
+  <!-- Todolist -->
+    <app-tolist (tolist)="Tolist($event)" [todata]="tolist"></app-tolist>
+    <app-dolist (dolist)="Dolist($event)" [dodata]="dolist"></app-dolist>
+  <!-- tolist -->
+  <!-- <div id="box1">
+    <input type="text" [(ngModel)]="data" id="inp"> 
+    <button (click)="add()">添加</button>
+    <button (click)="delall()">重置</button><br/>
+    <b id="h1">正在进行</b><b id="b1">{{tolist.length}}</b><br/>
+    <ul>
+      <li *ngFor = "let val of tolist;let i = index;">
+        <input type="checkbox" (change)="change(i)">{{val}}----<button (click)="del(i)">删除</button>
+      </li>
+    </ul><br/>
+    <b id="h1">已经完成</b><b id="b1">{{comlist.length}}</b><br/>
+    <ul>
+      <li *ngFor = "let val of comlist;let i = index;">
+        <input type="checkbox" checked (change)="change2(i)">{{val}}----<button (click)="del2(i)">删除</button>
+      </li>
+    </ul><br/>
+  </div> -->
+  <!-- ngSwitch -->
+  <!-- <div id="box2">
+    <input type="radio" (change)="changeFruit('芒果')" />芒果
+    <input type="radio" (change)="changeFruit('哈密瓜')" />哈密瓜
+    <input type="radio" (change)="changeFruit('榴莲')" />榴莲
+    <div [ngSwitch] = 'fruit'>
+      <div *ngSwitchCase="'芒果'">
+        这是一个芒果
+      </div>
+      <div *ngSwitchCase="'哈密瓜'">
+        这是一个哈密瓜
+      </div>
+      <div *ngSwitchCase="'榴莲'">
+        这是一个榴莲
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <app-voter [name]="arr2" (getIndex)="getIndex($event)"></app-voter>
+  <input type="button" value="点击" (click)="click()"> -->
+  
+  
+
+
+
+</div>
+
