@@ -32,7 +32,8 @@ export class AppComponent {
   }
   Dolist(e){
     this.tolist.push(e);
-    this.getdata.removeItem(e);
+    this.getdata.setItem('to'+e,e);
+    this.getdata.removeItem('do'+e);
   }
 
   // Tolist(e){
