@@ -1,0 +1,16 @@
+ul li{
+    list-style: none;
+    float: left;
+    width: 40%;
+    height: 250px;
+    margin: 5%;
+    background-color: rgba(144,144,144,0.5);
+    /* line-height: 250px; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    height: 200px;
+}
