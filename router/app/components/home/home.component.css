@@ -1,0 +1,10 @@
+ul li{
+    width: 40%;
+    height: 100px;
+    background-color: red;
+    margin: 5%;
+    list-style: none;
+    float: left;
+    font-size: 30px;
+    line-height: 100px;
+}

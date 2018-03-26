@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+}
+#box{
+    width: 1200px;
+    margin: 0 auto;
+    background: #cdcdcd;
+}
+.box3{
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+#inp{
+    border-radius: 5px;
+}
+#b1{
+    float: left;
+}
+#b2{
+    float: right;
+}
+ul li{
+    list-style: none;
+}
+input[type="checkbox"]{
+    float: left;
+}
+#b3{
+    float: left;
+}
+#btn{
+    position: absolute;
+    left: 400px;
+}
+#top{
+    background: #000;
+    text-align: center;
+    color: beige;
+    height: 40px;
+    line-height: 40px;
+}

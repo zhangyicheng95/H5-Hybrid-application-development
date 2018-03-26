@@ -1,0 +1,12 @@
+
+<div id="box">
+  <a routerLinkActive="active" routerLink="/goodslist" [queryParams]="{num:100,name:'zhang'}">goodslist</a>
+  <a routerLinkActive="active" routerLink="/tolist/100/200">todolist</a>
+  <a routerLinkActive="active" [routerLink]="['/home',200,100]" [queryParams]="{num:100,name:'zhang'}">home</a> 
+  <router-outlet></router-outlet>
+  
+    <!-- <app-tolist (tolist)="Tolist($event)" [todata]="tolist"></app-tolist>
+    <app-dolist (dolist)="Dolist($event)" [dodata]="dolist"></app-dolist> -->
+  
+</div>
+
