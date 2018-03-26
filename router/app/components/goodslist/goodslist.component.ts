@@ -17,7 +17,7 @@ export class GoodslistComponent implements OnInit {
   ngOnInit() {
     this.jsonp.get('http://datainfo.duapp.com/shopdata/getGoods.php?callback=JSONP_CALLBACK').subscribe( data=>{  
       this.list = data['_body'];
-      console.log(data['_body'][0].imgsUrl)
+      console.log(data['_body'][0])
     },err=>{
       console.log(err);
     });

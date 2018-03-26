@@ -4,13 +4,13 @@ ul li{
     width: 40%;
     height: 250px;
     margin: 5%;
-    background-color: rgba(144,144,144,0.5);
-    /* line-height: 250px; */
+    background-color: rgba(144,144,144,0.3);
 }
 a{
     text-decoration: none;
     color: black;
+    margin-top: 100px;
 }
 img{
-    height: 200px;
+    height: 150px;
 }
