@@ -1,0 +1,44 @@
+page-home {
+    
+}
+*{
+    padding: 0;
+}
+ion-slides{
+    height: 180px;
+}
+ion-title img{
+    height: 40px;
+    display: inline-block;
+}
+.segment-ios .segment-button ion-icon{
+    font-size: 2.1rem;
+}
+.search-ul li{
+    list-style: none;
+    width: 25%;
+    height: 100px;
+    padding-top: 15px;
+    border: 1px solid #e5e5e5;
+    float: left;
+    text-align: center;
+}
+.search-ul li img{
+    height: 50px;
+}
+#refersher{
+    height: 70px;
+    width: 150px;
+    background-color: rgba(144,144,144,0.6);
+    border: 1px solid gray;
+    padding-left: 20px;
+    line-height: 70px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+    display: none;
+}

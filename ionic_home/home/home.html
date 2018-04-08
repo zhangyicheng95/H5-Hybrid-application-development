@@ -1,0 +1,76 @@
+<ion-header no-border>
+  <ion-navbar color="yellow">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> 
+    <ion-title><img src="../../assets/imgs/ziya-logo.png" alt="logo"></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<!-- 下拉加载 -->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content  pullingIcon="arrow-dropdown" pullingText="下拉刷新..." refreshingText="努力加载中..."></ion-refresher-content>
+  </ion-refresher>
+  <div id="refersher">
+    刷新成功！
+  </div>
+<!-- 滚动图片 -->
+  <ion-slides autoplay="1000" loop="true" pager="true" (ionSlideDidChange)="go()">
+    <ion-slide>
+      <img src="../../assets/imgs/slides01.png" />
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/imgs/slides01.png" />
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/imgs/slides01.png" />
+    </ion-slide>
+  </ion-slides>
+<!-- 分段组件 -->
+  <ion-segment [(ngModel)]="search" color="yellow">
+    <ion-segment-button value="infor">
+      <ion-icon>找服务</ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="service">
+      <ion-icon>找信息</ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="search">
+    <div *ngSwitchCase="'infor'">
+      <ul class="search-ul">
+        <li><img src="../../assets/imgs/资产包转让.png"><br>资产包转让</li>
+        <li><img src="../../assets/imgs/债权转让.png"><br>债权转让</li>
+        <li><img src="../../assets/imgs/固产转让.png"><br>固产转让</li>
+        <li><img src="../../assets/imgs/商业保理.png"><br>商业保理</li>
+        <li><img src="../../assets/imgs/典当担保.png"><br>典当担保</li>
+        <li><img src="../../assets/imgs/融资借贷.png"><br>融资借贷</li>
+        <li><img src="../../assets/imgs/悬赏信息.png"><br>悬赏信息</li>
+        <li><img src="../../assets/imgs/尽职调查.png"><br>尽职调查</li>
+      </ul>
+    </div>
+    <div *ngSwitchCase="'service'">
+      <ul class="search-ul">
+        <li><img src="../../assets/imgs/资产包收购.png"><br>资产包收购</li>
+        <li><img src="../../assets/imgs/催收机构.png"><br>催收机构</li>
+        <li><img src="../../assets/imgs/律师事务所.png"><br>律师事务所</li>
+        <li><img src="../../assets/imgs/商业保理.png"><br>保理公司</li>
+        <li><img src="../../assets/imgs/资金过桥.png"><br>资金过桥</li>
+        <li><img src="../../assets/imgs/融资借贷.png"><br>投资贷款</li>
+        <li><img src="../../assets/imgs/固产转让.png"><br>固产收购</li>
+        <li><img src="../../assets/imgs/尽职调查.png"><br>尽职调查</li>
+      </ul>
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{item}}
+    </ion-item>
+  </ion-list>
+  <!-- 上拉加载 -->
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>
