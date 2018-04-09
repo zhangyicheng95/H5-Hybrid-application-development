@@ -52,7 +52,7 @@ export class HomePage {
     },200);
     setTimeout(() => {
       for (let i = 0; i < 10; i++) {
-        this.items.push( this.items.length );
+        this.items.push( this.items.length+1 );
       }
 
       clearInterval(timer);

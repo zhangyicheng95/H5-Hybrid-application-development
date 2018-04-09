@@ -1,6 +1,3 @@
-page-home {
-    
-}
 *{
     padding: 0;
 }
@@ -8,8 +5,15 @@ ion-slides{
     height: 180px;
 }
 ion-title img{
-    height: 40px;
-    display: inline-block;
+    height: 30px;
+}
+// 调整ion-item的下边框
+.list-ios .item-block .item-inner{
+    border-bottom: 0.55px solid #e5e5e5;
+}
+// 调整item最下面的长线
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+    border-bottom: none;
 }
 .segment-ios .segment-button ion-icon{
     font-size: 2.1rem;
@@ -18,19 +22,20 @@ ion-title img{
     list-style: none;
     width: 25%;
     height: 100px;
+    line-height: 30px;
     padding-top: 15px;
     border: 1px solid #e5e5e5;
     float: left;
     text-align: center;
 }
 .search-ul li img{
-    height: 50px;
+    height: 30px;
 }
 #refersher{
     height: 70px;
     width: 150px;
     background-color: rgba(144,144,144,0.6);
-    border: 1px solid gray;
+    border: none;
     padding-left: 20px;
     line-height: 70px;
     border-radius: 10px;
