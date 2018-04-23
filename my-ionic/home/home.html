@@ -1,0 +1,170 @@
+<ion-header no-border text-center>
+  <ion-navbar color="yellow">
+    <!-- 侧边栏按钮 -->
+    <button ion-button icon-only menuToggle style="width: 15%;">
+      <ion-icon name="menu"></ion-icon>
+    </button> 
+    <!-- logo -->
+    <ion-title style="width: 70%;float: left;"><img src="assets/imgs/ziya-logo.png" alt="logo"></ion-title>
+    <!-- 相机 -->
+    <button ion-button icon-only no-border style="width: 15%;" (click)="takePhoto()">
+      <ion-icon md="md-camera"></ion-icon>
+    </button>
+  </ion-navbar>
+  <!-- 头部搜索框 -->
+  <ion-toolbar color="yellow" id="ion-toolbar">
+    <ion-searchbar
+      [(ngModel)]="myInput"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content border>
+<!-- 下拉加载 -->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content  pullingIcon="arrow-dropdown" pullingText="下拉刷新..." refreshingText="努力加载中..."></ion-refresher-content>
+  </ion-refresher>
+  <div id="refersher">
+    刷新成功！
+  </div>
+<!-- 轮播图 -->
+  <ion-slides autoplay="3000" loop="true" pager="true" (ionSlideDidChange)="go()">
+    <ion-slide>
+      <img src= {{imgSrc}} />
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/slides01.png" />
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/slides01.png" />
+    </ion-slide>
+  </ion-slides>
+<!-- 分段组件 -->
+  <ion-segment [(ngModel)]="search" color="yellow">
+    <ion-segment-button value="infor">
+      <ion-icon>找信息</ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="service">
+      <ion-icon>找服务</ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  <div [ngSwitch]="search" class="ngswitch">
+    <div *ngSwitchCase="'infor'">
+      <ion-slides pager=true>
+        <ion-slide>
+          <ul class="search-ul">
+            <li><img src="assets/imgs/资产包转让.png"><br>资产包转让</li>
+            <li><img src="assets/imgs/债权转让.png"><br>债权转让</li>
+            <li><img src="assets/imgs/固产转让.png"><br>固产转让</li>
+            <li><img src="assets/imgs/商业保理.png"><br>商业保理</li>
+            <li><img src="assets/imgs/典当担保.png"><br>典当担保</li>
+            <li><img src="assets/imgs/融资借贷.png"><br>融资借贷</li>
+            <li><img src="assets/imgs/悬赏信息.png"><br>悬赏信息</li>
+            <li><img src="assets/imgs/尽职调查.png"><br>尽职调查</li>
+          </ul>
+        </ion-slide>
+        <ion-slide>
+            <ul class="search-ul">
+              <li><img src="assets/imgs/资产求购.png"><br>固产收购</li>
+              <li><img src="assets/imgs/委外催收.png"><br>委外催收</li>
+              <li><img src="assets/imgs/法律服务.png"><br>法律服务</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </ion-slide>
+      </ion-slides>
+    </div>
+    <div *ngSwitchCase="'service'">
+      <ion-slides pager=true>
+        <ion-slide>
+          <ul class="search-ul">
+            <li><img src="assets/imgs/资产包收购.png"><br>资产包收购</li>
+            <li><img src="assets/imgs/委外催收.png"><br>催收机构</li>
+            <li><img src="assets/imgs/律师事务所.png"><br>律师事务所</li>
+            <li><img src="assets/imgs/商业保理.png"><br>保理公司</li>
+            <li><img src="assets/imgs/资金过桥.png"><br>资金过桥</li>
+            <li><img src="assets/imgs/融资借贷.png"><br>投资贷款</li>
+            <li><img src="assets/imgs/固产转让.png"><br>固产收购</li>
+            <li><img src="assets/imgs/尽职调查.png"><br>尽职调查</li>
+          </ul>
+        </ion-slide>
+        <ion-slide>
+          <ul class="search-ul">
+            <li><img src="assets/imgs/律师事务所.png"><br>律师事务所</li>
+            <li><img src="assets/imgs/商业保理.png"><br>保理公司</li>
+            <li><img src="assets/imgs/资金过桥.png"><br>资金过桥</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+
+  <div style="height: 10px;width: 100%;background-color: #f4f4f4;margin: 3px 0 3px 0"></div>
+  <div class="middle_youzhi">
+    <img src="assets/imgs/优质信息.png" alt="优质信息" />
+    <span>优质信息</span>
+  </div>
+
+  
+  <ion-list>
+    <ion-item *ngFor="let item of items" style="height: 120px;" class="home_item">
+      <div class="infor_name">
+        <div style="border-bottom: 1px; margin-bottom: 5px;">
+          <span class="infor_name_span1">资产包转让</span><span class="infor_name_span2">　——FB001</span><br>
+        </div>
+        <div style="float: left;height: 60px;line-height: 90px;">
+          <img src="assets/imgs/资产包转让.png" style="height: 40px;" />
+        </div>
+        <div style="float: left;font-size: 15px;color: gray;height: 60px;line-height: 20px;">
+          <i>地区：</i><br>
+          <i>来源：</i><br>
+          <i>类型：</i><br>
+        </div>
+        <div style="float: left;font-size: 15px;color: black;height: 60px;line-height: 20px;">
+          <i>北京</i><br>
+          <i>银行</i><br>
+          <i>抵押</i><br>
+        </div>
+        <div style="float: left;padding-left: 20px;">
+          <span style="font-size: 25px;color: #c01444;">500万</span><br>
+          <span style="font-size: 15px; color: #9f9f9f;">总金额</span>
+        </div>
+        <div style="float: left;padding-left: 20px;">
+          <span style="font-size: 25px;color: #c01444;">300万</span><br>
+          <span style="font-size: 15px; color: #9f9f9f;">转让价</span>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+  <!-- 上拉加载 -->
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  <!-- 分享按钮 -->
+  <ion-fab bottom right >
+    <button ion-fab><ion-icon md="md-fenx"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab><ion-icon md="md-fabu"></ion-icon></button>
+      <button ion-fab><ion-icon md="md-wode"></ion-icon></button>
+      <button ion-fab><ion-icon md="md-chakan"></ion-icon></button>
+    </ion-fab-list>
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon md="md-msg"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+  
+  
+  
+
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header text-center>
+  <ion-navbar color="yellow">
+    <ion-title>登录</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="login_content">
+  <div class="login_input" padding text-center>
+    <ion-list no-lines>
+      <ion-item margin>
+        <ion-label><ion-icon md="md-me"></ion-icon></ion-label>
+        <ion-input type="text" placeholder="请输入用户名" [(ngModel)]="username">{{username}}</ion-input>
+      </ion-item>
+      <ion-item margin>
+        <ion-label><ion-icon md="md-mima"></ion-icon></ion-label>
+        <ion-input type="password" placeholder="登录密码" [(ngModel)]="password">{{password}}</ion-input>
+      </ion-item>
+    </ion-list>
+    <button class="loginbtn" (click)="Login()" margin>登录</button>
+    <button class="resetbtn" (click)="signup()">注册</button>
+    <br />
+    <br />
+    <div text-center style="font-size: 15px;color: #9f9fa1">
+      <span (click)="reset()">忘记密码？</span>
+    </div>
+  </div>
+
+</ion-content>

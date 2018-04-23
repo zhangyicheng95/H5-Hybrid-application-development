@@ -1,0 +1,92 @@
+page-about {
+    background-color: gray;
+}
+*{
+    padding: 0;
+}
+ion-slides{
+    height: 170px;
+}
+ion-title img{
+    height: 35px;
+}
+.button-md{
+    box-shadow: none;
+}
+.searchbar-md .searchbar-input{
+    border-radius: 30px;
+}
+.ngswitch ion-slides{
+    height: 200px;
+}
+.middle_youzhi{
+    margin-top: 10px;
+    border-bottom: 5px red;
+    height: 50px;
+    line-height: 50px;
+}
+.middle_youzhi img{
+    height: 20px;
+    float: left;
+    margin: 15px 10px 0 10px;
+}
+.middle_youzhi span{
+    float: left;
+    font-size: 20px;
+}
+// 调整ion-item的下边框
+.list-md .item-block .item-inner{
+    border-bottom: 0.55px solid #e5e5e5;
+}
+.segment-md .segment-button ion-icon{
+    font-size: 20px;
+}
+.search-ul li{
+    list-style: none;
+    width: 25%;
+    height: 80px;
+    font-size: 15px;
+    font-weight: 535;
+    line-height: 20px;
+    padding-top: 15px;
+    border: 1px solid #e5e5e5;
+    float: left;
+    text-align: center;
+}
+.search-ul li img{
+    height: 25px;
+}
+#refersher{
+    height: 70px;
+    width: 150px;
+    background-color: rgba(144,144,144,0.6);
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 70px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+    display: none;
+}
+.infor_name{
+    padding-left: 20px;
+}
+.infor_name_span1{
+    color: #71594b;
+    font-size: 15px;
+}
+.infor_name_span2{
+    color: #999999;
+}
+.button-md{
+    background-color: #fedb47;
+    border: none;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: 5px;
+}
