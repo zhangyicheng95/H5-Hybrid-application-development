@@ -1,0 +1,27 @@
+
+<ion-menu [content]="menu">
+    <ion-content padding id="myPanel">
+        <ion-list>
+            <div>
+                <div id="panel_head">
+                    <img src={{userimg}} alt="logo">
+                    <p>{{username}}</p>
+                </div>
+                <div id="panel_content">
+                    <ul>
+                        <li><a href="#"><img src="assets/imgs/债权转让.png" /><span>了解会员特权</span></a></li>
+                        <li><a href="#"><img src="assets/imgs/委外催收.png" /><span>账户余额</span></a></li>
+                        <li><a href="#"><img src="assets/imgs/典当担保.png" /><span>个性装扮</span></a></li>
+                        <li><a href="#"><img src="assets/imgs/商业保理.png" /><span>我的特卖</span></a></li>
+                        <li><a href="#"><img src="assets/imgs/固产转让.png" /><span>品牌收藏</span></a></li>
+                    </ul>
+                </div>
+                <div id="panel_foot">
+                    <button ion-button margin (click)="goLogin()">{{btnname}}</button>
+                </div>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+<ion-nav #menu [root]="rootPage"></ion-nav>

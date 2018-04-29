@@ -1,0 +1,41 @@
+page-chat {
+    .chat_list{
+        border: 1px solid #e4e4e4;
+        border-radius: 10px;
+    }
+    .chat_item img{
+        border-radius: 50px;
+        height: 30px;
+        float: left;
+    }
+    .chat_item span{
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        font-size: 15px!important;
+    }
+    .chat_itemr img{
+        border-radius: 50px;
+        height: 30px;
+        float: right;
+    }
+    .chat_itemr span{
+        height: 30px;
+        line-height: 30px;
+        float: right;
+        font-size: 15px!important;
+    }
+    .chat_input{
+        width: 90%;
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+    }
+    .send_btn{
+        border-radius: 5px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

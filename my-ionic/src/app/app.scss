@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul li{
+    list-style :none;
+}
+#myPanel{
+    background-color: #f4f4f4;
+}
+#panel_head{
+    text-align: center;
+}
+#panel_head img{
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+}
+#panel_content li{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #fff;
+}
+#panel_content img{
+    height: 20px;
+}
+#panel_content span{
+    margin-left: 10px;
+    font-size: 17px;
+}
+#panel_foot{
+    text-align: center;
+}
+#panel_foot button{
+    font-size: 20px;
+    width: 70%;
+    border-radius: 50px;
+}
+.toast-md .toast-wrapper{
+    width: 60%;
+    border-radius: 20px;
+}
+.toast-md .toast-message{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.button-md{
+    box-shadow: none;
+    background-color: #fedb47;
+    border: none;
+}
+.back-button.show-back-button{
+    width: 15%;
+}
+
+@font-face {
+    font-family: 'Ionicons';  /* project id 611922 */
+    src: url('../assets/iconfont/iconfont.eot');
+    src: url('../assets/iconfont/iconfont.woff') format('woff');
+  }
+.iconfont{
+    font-family:"Ionicons" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ion-md-fabu:before{
+    content: "\e677";
+}
+.ion-md-chakan:before{
+    content: "\e63e";
+}
+.ion-md-msg:before{
+    content: "\e648";
+}
+.ion-md-wode:before{
+    content: "\e61b";
+}
+.ion-md-fenx:before{
+    content: "\e603";
+}
+.ion-md-camera:before{
+    content: "\e67a";
+}
+.ion-md-back:before{
+    content: "\e613";
+}
+.ion-md-huatong:before{
+    content: "\e67d";
+}
+.ion-md-image:before{
+    content: "\e67b";
+}
+.ion-md-change:before{
+    content: "\e64a";
+}
+.ion-md-mima:before{
+    content: "\e612";
+}
+.ion-md-me:before{
+    content: "\e60d";
+}
+.ion-md-phone:before{
+    content: "\e76e";
+}
+.ion-md-yanzhengma:before{
+    content: "\e668";
+}
+.ion-md-star:before{
+    content: "\e615";
+}
+.ion-md-star1:before{
+    content: "\e627";
+    color: #fedb47;
+}
+.ion-md-arrow_left:before{
+    content: "\e680";
+}
+.ion-md-arrow_right:before{
+    content: "\e681";
+}
+.ion-md-arrow_up:before{
+    content: "\e60f";
+}
+.ion-md-arrow_down:before{
+    content: "\e623";
+}

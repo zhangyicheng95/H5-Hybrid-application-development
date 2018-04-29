@@ -1,0 +1,25 @@
+page-mypage {
+    #my_img{
+        border-radius: 100px;
+        height: 70px;
+        display: inline;
+    }
+    #my_name{
+        font-size: 20px;
+    }
+    .my_ziliao{
+        height: 25px;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+    .wode img{
+        float: left;
+        height: 25px;
+    }
+    .wode p{
+        float: left;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+}

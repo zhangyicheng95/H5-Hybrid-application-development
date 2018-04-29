@@ -1,0 +1,50 @@
+<ion-header no-border text-center>
+  <ion-navbar color="yellow">
+    <ion-title style="width: 70%;float: left;padding-top: 6px;">发布信息</ion-title>
+    <button  style="width: 15%;float: left;">
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-lines>
+    <ion-item style="color:#999;">
+      <span>类型：</span>
+      <span padding>{{type}}</span>
+    </ion-item>
+    <ion-item style="color:#999;" (click)="checkDiqu()">
+      <span>地区：</span>
+      <span padding>请选择</span>
+      <img src="assets/imgs/箭头.png" id="jiantou">
+    </ion-item>
+    <ion-item>
+      <ion-label>来源：</ion-label>
+      <ion-input placeholder="北京"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>总金额：</ion-label>
+      <ion-input placeholder="请输入"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>转让价：</ion-label>
+      <ion-input placeholder="请输入"></ion-input>
+    </ion-item>
+  </ion-list>
+  <p style="height: 40px;line-height: 40px;margin-left: 10px;">内容描述</p>
+  <ion-list no-lines>
+    <ion-item style="height: 150px;">
+      <ion-textarea placeholder="请输入内容..."></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <button ion-button>
+        <ion-icon md="md-huatong"></ion-icon>
+      </button> 
+      <button ion-button margin (click)="fabu_img()">
+        <ion-icon md="md-image"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+  <div text-center>
+    <button ion-button style="width: 80%;margin-top: 10px;">确认发布</button>
+  </div>
+</ion-content>

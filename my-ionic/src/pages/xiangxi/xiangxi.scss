@@ -1,0 +1,110 @@
+page-xiangxi{
+    .xiangxi_centent{
+        background-color: #f9f9f9;
+    }
+    .xiangxi_item{
+        height: 60px;
+        line-height: 30px;
+    }
+    .xiangxi_star{
+        width: 60px;
+        position: absolute;
+        right: 0;
+        z-index: 10;
+    }
+    .xiangxi_star img{
+        height: 30px;
+    }
+    .xiangxi_list,.xiangxi_list2,.xiangxi_list3,.xiangxi_list4{
+        margin: 3px 0 7px;
+    }
+    .xiangxi_list ion-item,.xiangxi_list2 ion-item,.xiangxi_list3 ion-item,.xiangxi_list4 ion-item{
+        padding-left: 0;
+        padding: 5px;
+    }
+    .xiangxi_list2 ion-item{
+        padding: 0 10px;
+        height: auto;
+    }
+    .xiangxi_list2 ion-textarea{
+        height: 100px;
+    }
+    .xiangxi_list3 ion-item{
+        padding: 0 10px;
+        height: auto;
+    }
+    .xiangxi_list3 ion-label{
+        height: 30px;
+        line-height: 30px;
+    }
+    .xiangxi_list4 ion-item{
+        height: auto;
+        padding: 0 10px;
+    }
+    #picScroll img{
+        width: 70px;
+        margin-left: 5px;
+    }
+    .xiangxi_list4_item{
+        text-align: center;
+        height: 80px!important;
+        overflow: hidden;
+    }
+    #picScroll{
+        width: 90%;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #arrow_left{
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 10%;
+    }
+    #arrow_right{
+        position: absolute;
+        right: 0;
+        top: 40%;
+        width: 10%;
+    }
+    .xiangxi_btn{
+        height: 45px;
+        background-color: #fff;
+    }
+    .xiangxi_btn img{
+        height: 30px;
+        border-radius: 50px;
+        margin-top: 8px;
+        float: left;
+    }
+    .xiangxi_btn_span{
+        float: left;
+        margin-top: 15px;
+    }
+    .xiangxi_btns button{
+        width: 50%;
+        height: 100%;
+        border: 0;
+        border-radius: 0;
+        margin: 0;
+    }
+    .xiangxi_btn_img{
+        padding-left: 5px;
+        float: left;
+        width: 40%;
+        height: 45px;
+    }
+    .xiangxi_btns{
+        float: left;
+        width: 60%;
+        height: 45px;
+    }
+    .xiangxi_btn1{
+        background-color: #ff3366;
+        float: left;
+    }
+    .xiangxi_btn1{
+        float: left;
+    }
+}

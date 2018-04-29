@@ -1,0 +1,58 @@
+<ion-header no-border text-center>
+  <ion-navbar color="yellow">
+    <ion-title style="width: 70%;float: left;padding-top: 6px;">{{name}}</ion-title>
+    <button  style="width: 15%;float: left;">
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="zhaoxinxi_page">
+  <!-- 头部选择 -->
+  <ion-list class="zhaoxinxi_list" (click)="header()">
+    <ion-item>
+      <ion-label (click)="idxClick(1)"><b style="color: #fedb47">信息类型</b><img src="assets/imgs/arrow_up.png"><span>|</span></ion-label>
+      <ion-label (click)="idxClick(2)"><b>地区</b><img src="assets/imgs/arrow_down.png"><span>|</span></ion-label>
+      <ion-label (click)="idxClick(3)"><b>更多</b><img src="assets/imgs/arrow_down.png"></ion-label>
+    </ion-item>
+  </ion-list>
+  <!-- 信息类型选择 -->
+  <ion-list id="msg" *ngIf="idx==1">
+    <ion-item *ngFor="let msg of xinxiArr">
+      <b><img src="" /></b>
+      <span>{{msg}}</span>
+    </ion-item>
+  </ion-list>
+  <!-- 地区选择 -->
+  <ion-grid class="diqu_gird" *ngIf="idx==2" [ngStyle]="{'background': '#e4e4e4'}">
+    <ion-row>
+      <!-- 左半部分 -->
+      <ion-col col-4>
+        <ion-scroll scrollY="true">
+          <ion-list no-lines class="diqu_list">
+            <ion-item *ngFor="let item of diquArr" (click)="diqu_item()">
+              {{item}}
+            </ion-item>
+          </ion-list>
+        </ion-scroll>
+      </ion-col>
+      <!-- 右半部分 -->
+      <ion-col col-8>
+        <ion-scroll scrollY="true">
+          <ion-list no-lines class="diqu2_list">
+            <ion-item *ngFor="let item2 of provinceArr">
+              {{item2}}
+            </ion-item>
+          </ion-list>
+        </ion-scroll>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- 更多 -->
+  <ion-list id="more" *ngIf="idx==3">
+    <ion-item *ngFor="let more of gengduo">
+      <b><img src="" /></b>
+      <span>{{more}}</span>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,73 @@
+page-home {
+    background-color: gray;
+    *{
+        padding: 0;
+    }
+    ion-slides{
+        height: 170px;
+    }
+    ion-title img{
+        height: 35px;
+    }
+    .ngswitch ion-slides{
+        height: 200px;
+    }
+    .middle_youzhi{
+        margin-top: 10px;
+        border-bottom: 5px red;
+        height: 50px;
+        line-height: 50px;
+    }
+    .middle_youzhi img{
+        height: 20px;
+        float: left;
+        margin: 15px 10px 0 10px;
+    }
+    .middle_youzhi span{
+        float: left;
+        font-size: 20px;
+    }
+    // 调整ion-item的下边框
+    .home_list ion-item{
+        padding-left: 0;
+    }
+    .searchbar-md .searchbar-input{
+        border-radius: 20px;
+    }
+    .segment-md .segment-button ion-icon{
+        font-size: 20px;
+    }
+    .infor-ul,.service-ul{
+        margin-left: 1%;
+    }
+    .infor-ul li,.service-ul li{
+        list-style: none;
+        width: 24.5%;
+        height: 80px;
+        font-size: 15px;
+        font-weight: 535;
+        line-height: 20px;
+        padding-top: 15px;
+        border: 1px solid #e5e5e5;
+        float: left;
+        text-align: center;
+        z-index: 10;
+    }
+    .infor-ul li img,.service-ul li img{
+        height: 25px;
+    }
+    .infor_name{
+        padding-left: 20px;
+    }
+    .infor_name_span1{
+        color: #71594b;
+        font-size: 15px;
+    }
+    .infor_name_span2{
+        color: #999999;
+    }
+    
+    .swiper-container-horizontal > .swiper-pagination-bullets{
+        bottom: 5px;
+    }
+}

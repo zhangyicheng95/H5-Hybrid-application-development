@@ -1,0 +1,29 @@
+page-wodehezuo{
+    .Myhezuo_list ion-item{
+        padding-left: 0;
+        height: 140px!important;
+    }
+    .info_name{
+        padding-left: 20px;
+    }
+    .info_name_span1{
+        color: #71594b;
+        font-size: 15px;
+    }
+    .info_name_span2{
+        color: #999999;
+    }
+    .item-md .item-button{
+        background-color: #fedb47;
+    }
+    .wodehezuo_btn{
+        width: 100%;
+        text-align: center;
+    }
+    #Myhezuo{
+        height: 30px;
+        width: 50%;
+        border-radius: 50px;
+        z-index: 20;
+    }
+}

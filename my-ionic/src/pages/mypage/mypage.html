@@ -1,0 +1,50 @@
+<ion-header no-border text-center>
+  <ion-navbar color="yellow">
+    <ion-title>我的</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div margin text-center>
+    <img src={{userimg}} id="my_img" /><br>
+    <p id="my_name">{{username}}</p>
+  </div>
+  <img src="assets/imgs/ziliao.png" class="my_ziliao" (click)="bianji()">
+  <ion-list>
+    <ion-item class="wode" (click)="yabi()">
+      <i><img src="assets/imgs/wode01.png"></i><p>芽币</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+    <ion-item class="wode" (click)="wodefabu()">
+      <i><img src="assets/imgs/wode02.png"></i><p>我发布的</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+    <ion-item class="wode" (click)="wodehezuo()">
+      <i><img src="assets/imgs/wode03.png"></i><p>我合作的</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item class="wode" (click)="wodeshoucang()">
+      <i><img src="assets/imgs/wode04.png"></i><p>我的收藏</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+    <ion-item class="wode" (click)="caogao()">
+      <i><img src="assets/imgs/wode05.png"></i><p>我的草稿箱</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+    <ion-item class="wode" (click)="shipinfabu()">
+      <i><img src="assets/imgs/wode06.png"></i><p>视频发布</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+    <ion-item class="wode" (click)="wanshanxinxi()">
+      <i><img src="assets/imgs/wode07.png"></i><p>完善信息</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+    <ion-item class="wode" (click)="VIPdengji()">
+      <i><img src="assets/imgs/wode08.png"></i><p>VIP等级</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+    <ion-item class="wode" (click)="anquan()">
+      <i><img src="assets/imgs/wode10.png"></i><p>账户安全</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+    <ion-item class="wode" (click)="bangzhu()">
+      <i><img src="assets/imgs/wode11.png"></i><p>帮助与反馈</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+    <ion-item class="wode" (click)="shezhi()">
+      <i><img src="assets/imgs/wode12.png"></i><p>设置</p><i><img src="assets/imgs/箭头.png" style="float: right;"></i>
+    </ion-item>
+  </ion-list>
+</ion-content>

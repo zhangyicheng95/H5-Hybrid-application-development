@@ -1,0 +1,79 @@
+<ion-header text-center>
+  <ion-navbar color="yellow">
+    <ion-title style="width: 70%;float: left;padding-top: 6px;">详细信息</ion-title>
+    <button  style="width: 15%;float: left;">
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="xiangxi_centent">
+  <div class="xiangxi_star" (click)="shoucang()">
+    <img src="assets/imgs/starEmpty.png" class="xiangxi_img"><br>
+    <span>收藏</span>
+  </div>
+  <ion-list class="xiangxi_list">
+    <ion-item class="xiangxi_item">
+      <span>{{name}}</span><br>
+      <span style="color: #c4c4c4;">完整度:</span>
+      <span>
+        <ion-icon md="md-star1"></ion-icon>
+        <ion-icon md="md-star1"></ion-icon>
+        <ion-icon md="md-star1"></ion-icon>
+        <ion-icon md="md-star"></ion-icon>
+        <ion-icon md="md-star"></ion-icon>
+      </span>
+    </ion-item>
+    <ion-item>
+      <span style="color: #c4c4c4;">总金额:</span><span style="color: red;margin-left: 10px;">{{zong}}</span>
+      <span style="color: #c4c4c4;">转让价:</span><span style="color: red;margin-left: 10px;">{{money}}</span>
+    </ion-item>
+    <ion-item>
+      <span style="color: #c4c4c4;">地区:</span><span style="margin: 10px;">{{diqu}}</span>
+      <span style="color: #c4c4c4;margin-left: 10px;">来源:</span><span style="margin: 10px;">{{laiyuan}}</span>
+      <span style="color: #c4c4c4;margin-left: 10px;">类型:</span><span style="margin-left: 10px;">{{leixing}}</span>
+    </ion-item>
+  </ion-list>
+  <ion-list class="xiangxi_list2">
+    <ion-item>
+      <ion-label>信息描述</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder='该资源包来自于广发银行...'></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-list class="xiangxi_list3">
+    <ion-item>
+      <ion-label>语音描述:</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list class="xiangxi_list4">
+    <ion-item>
+      <ion-label>照片描述</ion-label>
+    </ion-item>
+    <ion-item class="xiangxi_list4_item">
+      <ion-icon md="md-arrow_left" id="arrow_left"></ion-icon>
+        <div id="picScroll">
+          <span id="picScroll1">
+            <img src="assets/imgs/lp.jpg" />
+            <img src="assets/imgs/lp.jpg" />
+            <img src="assets/imgs/lp.jpg" />
+            <img src="assets/imgs/lp.jpg" />
+            <img src="assets/imgs/lp.jpg" />
+            <img src="assets/imgs/lp.jpg" />
+          </span>
+          <span id="picScroll2"></span>
+        </div> 
+      <ion-icon md="md-arrow_right" id="arrow_right"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer class="xiangxi_btn">
+  <div class="xiangxi_btn_img">
+    <img src="assets/imgs/lp.jpg"><span class="xiangxi_btn_span">138****6666</span>
+  </div>
+  <div class="xiangxi_btns">
+    <button ion-button class="xiangxi_btn1">查看抢单人</button>
+    <button ion-button class="xiangxi_btn2">私聊留言</button>
+  </div>
+</ion-footer>

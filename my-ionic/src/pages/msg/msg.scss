@@ -1,0 +1,17 @@
+page-msg {
+    .msg_item img{
+        height: 30px;
+        border-radius: 50px;
+        float: left;
+    }
+    .msg_item span{
+        float: left;
+        font-size: 15px;
+        padding: 5px;
+    }
+    .msg_list ion-item{
+        padding-left: 0;
+        width: 90%;
+        border-bottom: 1px solid #c4c4c4;
+    }
+}

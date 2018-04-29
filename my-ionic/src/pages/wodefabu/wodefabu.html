@@ -1,0 +1,41 @@
+<ion-header no-border text-center>
+  <ion-navbar color="yellow">
+    <ion-title style="width: 70%;float: left;padding-top: 6px;">我发布的</ion-title>
+    <button  style="width: 15%;float: left;">
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list class="myfabu_list">
+    <ion-item *ngFor="let item of items" style="height: 120px;" class="home_item">
+      <div class="infor_name">
+        <div style="border-bottom: 1px; margin-bottom: 5px;">
+          <span class="infor_name_span1">资产包转让</span><span class="infor_name_span2">　——FB001</span><br>
+        </div>
+        <div style="float: left;height: 60px;line-height: 90px;">
+          <img src="assets/imgs/资产包转让.png" style="height: 40px;" />
+        </div>
+        <div style="float: left;font-size: 15px;color: gray;height: 60px;line-height: 20px;padding-left: 10px;">
+          <i>地区：</i><br>
+          <i>来源：</i><br>
+          <i>类型：</i><br>
+        </div>
+        <div style="float: left;font-size: 15px;color: black;height: 60px;line-height: 20px;">
+          <i>北京</i><br>
+          <i>银行</i><br>
+          <i>抵押</i><br>
+        </div>
+        <div style="float: left;padding-left: 10%;">
+          <span style="font-size: 25px;color: #c01444;">500万</span><br>
+          <span style="font-size: 15px; color: #9f9f9f;">总金额</span>
+        </div>
+        <div style="float: left;padding-left: 10%;">
+          <span style="font-size: 25px;color: #c01444;">300万</span><br>
+          <span style="font-size: 15px; color: #9f9f9f;">转让价</span>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

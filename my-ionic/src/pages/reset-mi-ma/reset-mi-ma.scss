@@ -1,0 +1,35 @@
+page-reset-mi-ma {
+    .toolbar-background-md{
+        background: transparent;
+        border: none;
+    }
+    .bar-button-default-md{
+        color: #e7e7e7;
+    }
+    .toolbar-title-md{
+        color: #e7e7e7;
+    }
+    .reset_input{
+        position: absolute;
+        top: 130px;
+        left: 0;
+        right: 0;
+    }
+    #yanzhengma_span{
+        width: 100px;
+        position: relative;
+        top: 200px;
+        left: 210px;
+    }
+    .reset_list ion-item{
+        background-color: transparent;
+        padding-left: 0;
+        width: 90%;
+    }
+    .reset_list ion-input{
+        color: #fff;
+    }
+    ion-navbar{
+        background-color: transparent!important;
+    }
+}
